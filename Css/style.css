@@ -215,12 +215,37 @@ main{
     font-size: x-large;
     font-weight: 400;
 }
+
+.raidsContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textContent {
+    font-family: 'Alegreya', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 15px
+}
+.h3R {
+    color: white;
+    font-size: xx-large;
+    font-weight: 700;
+}
+.pRaid {
+    color:#ececee;
+    font-size: x-large;
+    font: weight 500 ;
+}
 @media screen and (max-width:850px) {
     .info {
         font-family: Arial, Helvetica, sans-serif;
         font-size: larger;
         font-weight: 600;
     }
+    
     .menu:hover {
         background-color: rgb(57, 60, 65);
         border-radius: 5px 5px 5px 5px;
