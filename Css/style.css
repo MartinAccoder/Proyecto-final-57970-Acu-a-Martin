@@ -239,6 +239,24 @@ main{
     font-size: x-large;
     font: weight 500 ;
 }
+.expsContent {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+} 
+.expanc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ececee;
+    gap: 1rem;
+    font-family: 'Alegreya', serif;
+    font-size: xx-large;
+    padding: 30px;
+}
+.exps {
+    width: 500px;    
+}
 @media screen and (max-width:850px) {
     .info {
         font-family: Arial, Helvetica, sans-serif;
