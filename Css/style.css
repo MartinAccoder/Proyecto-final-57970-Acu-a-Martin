@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;400;900&family=Lobster+Two&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -11,14 +12,14 @@ header {
     align-items: center;
     justify-items: center;
     justify-content: space-between;
-    
     padding: 1rem;
 }
 
 .foot {
     list-style: none;
 }
-main{
+
+main {
     display: flexbox;
     flex-direction: column;
     justify-content: center;
@@ -55,7 +56,7 @@ main{
 
 .menu:hover {
     background-color: rgb(107, 88, 88);
-        border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .iconIn {
@@ -65,6 +66,7 @@ main{
     padding: 3px;
     padding-top: 5px;
 }
+
 .conte {
     padding-top: 2rem;
 }
@@ -87,7 +89,7 @@ main{
 .cinematic {
     display: flex;
     justify-content: center;
-    
+
 }
 
 .piePag {
@@ -187,30 +189,34 @@ main{
     margin: 15px;
 }
 
-.abrirMenu, 
-.cerrarMenu{
+.abrirMenu,
+.cerrarMenu {
     display: none;
 }
+
 .nav.visible {
     opacity: 1;
     visibility: visible;
 }
+
 .d-block {
     width: 25%;
-    margin-bottom:200px;
-} 
+    margin-bottom: 200px;
+}
 
-    .tH5 {
+.tH5 {
     font-family: 'Alegreya', serif;
     font-weight: 900;
     font-size: xx-large
 }
-.parra{
+
+.parra {
     font-family: 'Alegreya', serif;
     font-size: xx-large;
     font-weight: 400;
 }
-.parraf{
+
+.parraf {
     font-family: 'Alegreya', serif;
     font-size: x-large;
     font-weight: 400;
@@ -221,6 +227,7 @@ main{
     flex-direction: column;
     align-items: center;
 }
+
 .textContent {
     font-family: 'Alegreya', serif;
     display: flex;
@@ -229,21 +236,25 @@ main{
     margin: 20px;
     padding: 15px
 }
+
 .h3R {
     color: white;
     font-size: xx-large;
     font-weight: 700;
 }
+
 .pRaid {
-    color:#ececee;
+    color: #ececee;
     font-size: x-large;
-    font: weight 500 ;
+    font: weight 500;
 }
+
 .expsContent {
     display: flex;
     flex-direction: column;
     gap: 5rem;
-} 
+}
+
 .expanc {
     display: flex;
     flex-direction: column;
@@ -254,23 +265,26 @@ main{
     font-size: xx-large;
     padding: 30px;
 }
+
 .exps {
-    width: 500px;    
+    width: 500px;
 }
+
 @media screen and (max-width:850px) {
     .info {
         font-family: Arial, Helvetica, sans-serif;
         font-size: larger;
         font-weight: 600;
     }
-    
+
     .menu:hover {
         background-color: rgb(57, 60, 65);
         border-radius: 5px 5px 5px 5px;
-        }
+    }
+
     .menu {
         flex-direction: column;
-        
+
     }
 
     .nav {
@@ -279,25 +293,31 @@ main{
         align-items: end;
         justify-content: center;
         gap: 1rem;
-        position: absolute;
+        bottom: 0;
         top: 0;
         right: 0;
-        bottom: 0;
+        position: absolute;
         padding: 2rem;
         background-color: rgb(21, 24, 31);
         box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
         opacity: 0;
         visibility: hidden;
+        z-index: 10;
+        
     }
+
     .abrirMenu:hover {
         background-color: rgb(138, 122, 122);
         border-radius: 5px 5px 5px 5px;
     }
+
     .cerrarMenu:hover {
         background-color: rgb(49, 53, 59);
         border-radius: 5px 5px 5px 5px;
-    }    .abrirMenu,
-    .cerrarMenu  {
+    }
+
+    .abrirMenu,
+    .cerrarMenu {
         display: block;
         border: 0;
         font-size: 2rem;
@@ -315,17 +335,18 @@ main{
         flex-direction: column;
         align-items: end;
     }
+
     .menu {
         color: #ececee;
         font-size: large;
         padding: 3px;
-        
+
     }
 
     .iconIn {
         align-items: start;
     }
-    
+
     .grilla,
     .grillaT2 {
         display: flex;
@@ -334,8 +355,8 @@ main{
     }
 
     .clas1,
-    .clas2, 
-    .desc1, 
+    .clas2,
+    .desc1,
     .desc2,
     .esp1,
     .esp2 {
@@ -346,6 +367,6 @@ main{
     .imgClass1,
     .imgClass2 {
         width: 150px;
-        
+
     }
 }
