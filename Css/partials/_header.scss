@@ -1,0 +1,139 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    
+    
+    
+    .iconIn {
+        width: 4rem;
+        height: 4rem;
+        margin: 9px;
+        padding: 3px;
+        padding-top: 5px;
+    }
+
+    .abrirMenu,
+    .cerrarMenu {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        font-family: 'Alegreya', serif;
+        font-weight: 900;
+        font-size: xx-large;
+        
+
+        &.visible {
+            opacity: 1;
+            visibility: visible;
+
+        }
+
+        .navList {
+            display: flex;
+            height: 4rem;
+            padding: 10px 30px;
+            text-decoration: none;
+            border-radius: 5px 5px 5px 5px;
+            list-style-type: none;
+            gap: 2rem;
+            justify-content: end;
+
+            .menu {
+                text-decoration: none;
+                color: rgb(250, 250, 250);
+
+                &:hover {
+                    background-color: rgb(107, 88, 88);
+                    border-radius: 5px 5px 5px 5px;
+                }
+            }
+
+
+        }
+
+    }
+    @media screen and (max-width:850px) {
+        .info {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            font-weight: 600;
+        }
+    
+        .menu:hover {
+            background-color: rgb(57, 60, 65);
+            border-radius: 5px 5px 5px 5px;
+        }
+    
+        .menu {
+            flex-direction: column;
+    
+        }
+    
+        .nav {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: center;
+            gap: 1rem;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            position: absolute;
+            padding: 2rem;
+            background-color: rgb(21, 24, 31);
+            box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 10;           
+        }
+    
+        .cerrarMenu, 
+        .abrirMenu {
+            display: block;
+            border: 0;
+            font-size: 2rem;
+            background-color: transparent;
+            color: white;
+            
+        }
+        .abrirMenu:hover {
+            background-color: rgb(138, 122, 122);
+            border-radius: 5px 5px 5px 5px;
+        }
+    
+        .cerrarMenu:hover {
+            background-color: rgb(49, 53, 59);
+            border-radius: 5px 5px 5px 5px;
+        }
+    
+    
+        .logo {
+            display: flex;
+    
+        }
+    
+        .navList {
+            flex-direction: column;
+            align-items: end;
+        }
+    
+        .menu {
+            color: #ececee;
+            font-size: large;
+            padding: 3px;
+    
+        }
+    
+        .iconIn {
+            align-items: start;
+        }    
+        
+        
+    }
+
+}

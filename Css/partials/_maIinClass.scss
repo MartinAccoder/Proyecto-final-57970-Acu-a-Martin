@@ -1,0 +1,110 @@
+.conte {
+    padding-top: 2rem;
+    
+    .flexContenedor {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+        .grilla {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-areas:
+            'frac1 frac2'
+                'frac3 frac4';
+            padding: 10px;
+            justify-content: center;
+            border: 3px solid black;
+            border-radius: 7px 7px 7px 7px;
+            font-family: 'Alegreya', serif;
+            justify-items: center;
+            
+            .clas1 {
+                grid-area: frac1;
+                font-size: 50px;
+                color: white;
+                margin: 15px;
+            }
+
+            .esp1 {
+                color: white;
+                font-size: 45px;
+                grid-area: frac2;
+                margin: 15px;
+            }
+            
+            .desc1 {
+                color: white;
+                font-size: 30px;
+                grid-area: frac4;
+                margin: 15px;
+            }
+
+        }
+        
+        .grillaT2 {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-template-areas:
+            'frac1 frac2'
+            'frac3 frac4';
+            padding: 10px;
+            justify-content: center;
+            border: 3px solid black;
+            border-radius: 7px 7px 7px 7px;
+            font-family: 'Alegreya', serif;
+            justify-items: center;
+            
+            .clas2 {
+                color: white;
+                font-size: 50px;
+                grid-area: frac2;
+                margin: 15px;
+            }
+            
+            .imgClass2 {
+                grid-area: frac4;
+                margin: 15px;
+            }
+            
+            .desc2 {
+                color: white;
+                grid-area: frac3;
+                font-size: 30px;
+                margin: 15px;
+            }
+            
+            .esp2 {
+                color: white;
+                font-size: 45px;
+                grid-area: frac1;
+                margin: 15px;
+            }
+        }
+        @media screen and (max-width:850px) {
+            .grilla,
+            .grillaT2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .clas1,
+            .clas2,
+            .desc1,
+            .desc2,
+            .esp1,
+            .esp2 {
+                font-size: medium;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .imgClass1,
+            .imgClass2 {
+                width: 150px;
+                
+            }
+        }
+    }
+}

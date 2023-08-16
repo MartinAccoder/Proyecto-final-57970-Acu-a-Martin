@@ -1,0 +1,24 @@
+.carousel-inner {
+    .carousel-item {
+        margin: 0;
+        
+        .d-block {
+            width: 40%;
+            align-items: center;
+            padding-bottom: 150px;
+
+            .tH5 {
+                font-family: 'Alegreya', serif;
+                font-weight: 900;
+                font-size: xx-large;
+            }
+
+            .parra {
+                font-family: 'Alegreya', serif;
+                font-size: xx-large;
+                font-weight: 400;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,29 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    .logo {
+        padding-top: 25px;
+        display: block;
+        width: 60%;
+        margin: auto;
+    }
+    
+    .info {
+        font-family: $fontPrinc;
+        width: 600;
+        font-size: x-large;
+        padding: 25px;
+        color: rgb(245, 237, 237);
+    }
+    
+    .cinematic {
+        display: flex;
+        justify-content: center;
+        
+    } 
+    
+    
+
+}
